@@ -577,10 +577,6 @@ var PlayMustache = function(){
                 var name = key.substr(key.lastIndexOf('/') + 1);
                 partials[key] = meta[name + '.html'];
             }
-			console.log("TEST");
-			console.log(tmpl);
-			console.log(context)
-			console.log(partials)
             return Mustache.to_html(tmpl, context, partials);
 		}
 	}
